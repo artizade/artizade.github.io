@@ -3,112 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Page</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Arati Zade - Software Engineer</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      margin: 0;
-      padding: 0;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 50px;
+    }
+    h1, h2, h3 {
       color: #333;
     }
-    .profile-header {
-      text-align: center;
-      padding: 50px 20px;
-      background-color: #f0f0f0;
-      border-bottom: 1px solid #ddd;
+    .profile-container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
     }
-    .profile-header img {
+    .profile-container p {
+      line-height: 1.6;
+    }
+    .badge {
+      background-color: #4CAF50;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 10px;
+      margin-right: 5px;
+      font-size: 14px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .button:hover {
+      background-color: #45a049;
+    }
+    .profile-picture {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      margin-bottom: 20px;
       object-fit: cover;
     }
-    .profile-header h1 {
-      font-size: 48px;
-      margin: 0;
-    }
-    .profile-header p {
-      font-size: 18px;
-      color: #666;
-    }
-    .badges-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 20px 0;
-    }
-      .profile-pic {
-      width: 150px; /* Adjust as needed */
-      height: 150px; /* Adjust as needed */
-      border-radius: 50%; /* Makes the image circular */
-      object-fit: cover; /* Ensures the image fits the circle */
-    }
-    .badge {
-      background-color: #0073e6;
-      color: white;
-      padding: 8px 15px;
-      border-radius: 20px;
-      font-size: 14px;
-      margin: 5px;
-    }
-    .about-section, .open-to-section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-    .about-section h2, .open-to-section h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-    .about-section p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    .open-to-section ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    .open-to-section li {
-      font-size: 16px;
-      margin-bottom: 8px;
-    }
-    .resume-button {
-      display: block;
+    .profile-header {
       text-align: center;
-      background-color: #0073e6;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 18px;
-      margin: 40px auto 0 auto;
-      width: 200px;
-    }
-    .footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #999;
-      border-top: 1px solid #ddd;
-      margin-top: 40px;
+      margin-bottom: 30px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Profile Header Section with Profile Picture -->
+  <!-- Profile Section -->
   <div class="profile-header">
-    <img src="Profile.jpeg" alt="Profile Picture">
+    <img src="Profile.jpeg" alt="Arati Zade" class="profile-picture">
     <h1>Arati Zade</h1>
-    <p>Software Engineer, Integration Developer & Lifelong Learner with over 1.9 years of experience.<br>
-    Currently working at Ambit Software, based in Pune, Maharashtra.</p>
+    <p><strong>@arti_zade</strong> - A Software Engineer, Integration Developer & Lifelong Learner with over 1.9 years of experience. Currently working at Ambit Software, based in Pune, Maharashtra.</p>
   </div>
 
-  <!-- Badges Section -->
-  <div class="badges-container">
+  <!-- Skills and Badges -->
+  <div class="profile-container">
+    <h2>Skills & Badges</h2>
     <span class="badge">Software Engineering</span>
     <span class="badge">Life Long Learner</span>
     <span class="badge">Integration Developer</span>
@@ -117,17 +74,26 @@
     <span class="badge">Software Developer</span>
   </div>
 
-  <!-- About Section -->
-  <div class="about-section">
+  <!-- Bio Description -->
+  <div class="profile-container">
     <h2>About Me</h2>
-    <p>
-      Arati, a skilled Software Engineer from Pune, Maharashtra, brings over 1.9 years of experience to their role at Ambit Software. With a passion for continuous learning and professional growth, Arati has selected badges such as Professional, Life Long Learner, and Software Engineering to showcase their dedication to their craft. Their commitment to self-improvement and mastery in the field makes them a valuable asset to any team.
-    </p>
+    <p>Arati, a skilled Software Engineer from Pune, Maharashtra, brings over 1.9 years of experience to their role at Ambit Software. With a passion for continuous learning and professional growth, Arati has selected badges such as Professional, Life Long Learner, and Software Engineering to showcase their dedication to their craft. Their commitment to self-improvement and mastery in the field makes them a valuable asset to any team.</p>
   </div>
 
-  <!-- Open To Section -->
-  <div class="open-to-section">
-    <h2>I'm open to:</h2>
+  <!-- Work Experience -->
+  <div class="profile-container">
+    <h2>Work Experience</h2>
+    <p><strong>Jun 2022 - Present</strong></p>
+    <p>Trainee Software Developer, Ambit Software</p>
+    <p><strong>Nov 2020 - Aug 2022</strong></p>
+    <p>Master of Computer Application, Shri Hanuman Vyayam Prasarak Mandal DCPE, Amravati</p>
+    <p><strong>Aug 2016 - May 2019</strong></p>
+    <p>Bachelor of Computer Science, Adarsh Science College, Dhamangaon Rly.</p>
+  </div>
+
+  <!-- Open to -->
+  <div class="profile-container">
+    <h3>I'm open to:</h3>
     <ul>
       <li>Mentoring</li>
       <li>Partnering on side projects</li>
@@ -136,6 +102,10 @@
   </div>
 
   <!-- Resume Button -->
-  <a href="resume.html" class="resume-button">View Resume</a>
+  <a href="resume.html" class="button">View Resume</a>
 
-  <!-- 
+  <footer>
+    <p>Arati Zade | @arti_zade | Pune, Maharashtra</p>
+  </footer>
+</body>
+</html>
