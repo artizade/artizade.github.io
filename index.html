@@ -3,55 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arati Zade - Software Engineer</title>
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      text-align: center;
-      padding: 50px;
-    }
-    h1, h2, h3 {
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
       color: #333;
     }
-    .profile-container {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: left;
+    .profile-header {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #f0f0f0;
+      border-bottom: 1px solid #ddd;
     }
-    .profile-container p {
-      line-height: 1.6;
+    .profile-header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+    .profile-header p {
+      font-size: 18px;
+      color: #666;
+    }
+    .badges-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
     }
     .badge {
-      background-color: #4CAF50;
+      background-color: #0073e6;
       color: white;
-      padding: 5px 10px;
-      border-radius: 10px;
-      margin-right: 5px;
+      padding: 8px 15px;
+      border-radius: 20px;
       font-size: 14px;
+      margin: 5px;
     }
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 20px;
-      background-color: #4CAF50;
+    .about-section, .open-to-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .about-section h2, .open-to-section h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+    .about-section p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .open-to-section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .open-to-section li {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    .resume-button {
+      display: block;
+      text-align: center;
+      background-color: #0073e6;
       color: white;
-      text-decoration: none;
+      padding: 12px 25px;
       border-radius: 5px;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 40px auto 0 auto;
+      width: 200px;
     }
-    .button:hover {
-      background-color: #45a049;
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #999;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <h1>Arati Zade</h1>
-  <p><strong>@Arati Zade</strong> - A Software Engineer, Integration Developer & Lifelong Learner with over 1.9 years of experience. Currently working at Ambit Software, based in Pune, Maharashtra.</p>
+  <!-- Profile Header Section -->
+  <div class="profile-header">
+    <h1>Arati Zade</h1>
+    <p>Software Engineer, Integration Developer & Lifelong Learner with over 1.9 years of experience.<br>
+    Currently working at Ambit Software, based in Pune, Maharashtra.</p>
+  </div>
 
-  <!-- Skills and Badges -->
-  <div class="profile-container">
-    <h2>Skills & Badges</h2>
+  <!-- Badges Section -->
+  <div class="badges-container">
     <span class="badge">Software Engineering</span>
     <span class="badge">Life Long Learner</span>
     <span class="badge">Integration Developer</span>
@@ -60,15 +103,17 @@
     <span class="badge">Software Developer</span>
   </div>
 
-  <!-- Bio Description -->
-  <div class="profile-container">
+  <!-- About Section -->
+  <div class="about-section">
     <h2>About Me</h2>
-    <p>Arati, a skilled Software Engineer from Pune, Maharashtra, brings over 1.9 years of experience to their role at Ambit Software. With a passion for continuous learning and professional growth, Arati has selected badges such as Professional, Life Long Learner, and Software Engineering to showcase their dedication to their craft. Their commitment to self-improvement and mastery in the field makes them a valuable asset to any team.</p>
+    <p>
+      Arati, a skilled Software Engineer from Pune, Maharashtra, brings over 1.9 years of experience to their role at Ambit Software. With a passion for continuous learning and professional growth, Arati has selected badges such as Professional, Life Long Learner, and Software Engineering to showcase their dedication to their craft. Their commitment to self-improvement and mastery in the field makes them a valuable asset to any team.
+    </p>
   </div>
 
-  <!-- Open to -->
-  <div class="profile-container">
-    <h3>I'm open to:</h3>
+  <!-- Open To Section -->
+  <div class="open-to-section">
+    <h2>I'm open to:</h2>
     <ul>
       <li>Mentoring</li>
       <li>Partnering on side projects</li>
@@ -77,10 +122,12 @@
   </div>
 
   <!-- Resume Button -->
-  <a href="resume.html" class="button">View Resume</a>
+  <a href="resume.html" class="resume-button">View Resume</a>
 
-  <footer>
+  <!-- Footer Section -->
+  <div class="footer">
     <p>Arati Zade | @arti_zade | Pune, Maharashtra</p>
-  </footer>
+  </div>
+
 </body>
 </html>
